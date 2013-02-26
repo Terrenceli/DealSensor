@@ -63,7 +63,7 @@ class RESTController {
 						title(a.title)
 						iconUri(a.iconUri)
 						category(a.dealCategories)
-						location(latitude:a.supplier.latitude,longitude:a.supplier.longitude,range:distance(deviceLatitude.toDouble(),deviceLongitude.toDouble(),a.supplier.latitude,a.supplier.longitude,unit))
+						location(latitude:a.supplier.latitude,longitude:a.supplier.longitude)
 						//range(this.dist)
 					}
 				}
@@ -93,6 +93,7 @@ class RESTController {
 					address(deal.supplier.address)
 				}
 				location(latitude:deal.supplier.latitude,longitude:deal.supplier.longitude)
+				
 				
 			}
 		}
