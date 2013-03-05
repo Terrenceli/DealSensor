@@ -86,9 +86,9 @@ class RESTController {
 				description(deal.description)
 				categories(deal.dealCategories)
 				supplier{
-					id(deal.supplier.id)
+					supplierId(deal.supplier.id)
 					name(deal.supplier.name)
-					description(deal.supplier.description)
+					information(deal.supplier.description)
 					phone(deal.supplier.phone)
 					address(deal.supplier.address)
 				}
